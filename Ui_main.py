@@ -23,7 +23,7 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(749, 664)
+        Form.resize(749, 720)
         font = QFont()
         font.setFamilies([u"Segoe UI"])
         font.setPointSize(10)
@@ -184,7 +184,7 @@ class Ui_Form(object):
         self.groupBox_3.setGeometry(QRect(10, 80, 351, 151))
         self.u1u2 = QCheckBox(self.groupBox_3)
         self.u1u2.setObjectName(u"u1u2")
-        self.u1u2.setGeometry(QRect(40, 20, 61, 31))
+        self.u1u2.setGeometry(QRect(40, 20, 71, 31))
         self.lpm = QCheckBox(self.groupBox_3)
         self.lpm.setObjectName(u"lpm")
         self.lpm.setGeometry(QRect(110, 20, 51, 31))
@@ -299,6 +299,11 @@ class Ui_Form(object):
         self.sd2_wp_enabled = QCheckBox(self.groupBox_6)
         self.sd2_wp_enabled.setObjectName(u"sd2_wp_enabled")
         self.sd2_wp_enabled.setGeometry(QRect(70, 60, 171, 21))
+        self.label_23 = QLabel(Form)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setGeometry(QRect(340, 660, 381, 51))
+        self.label_23.setAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
+        self.label_23.setOpenExternalLinks(True)
 
         self.retranslateUi(Form)
 
@@ -413,5 +418,6 @@ class Ui_Form(object):
         self._3233_pin_defined.setItemText(1, QCoreApplication.translate("Form", u"#48: LED Mode; #128: Power", None))
 
         self.sd2_wp_enabled.setText(QCoreApplication.translate("Form", u"Enable #128 as SD2_WP", None))
+        self.label_23.setText(QCoreApplication.translate("Form", u"<html><head/><body><p align=\"right\">Powered by barryblueice, 2025. <br/>NOT Genesys Official.<br/>OpenSource-Link: <a href=\"https://github.com/barryblueice/Genesys-Reader-EEP-Generated-Tool\"><span style=\" text-decoration: underline; color:#003e92;\">GitHub-Genesys Reader EEP Generated Tool</span></a></p></body></html>", None))
     # retranslateUi
 

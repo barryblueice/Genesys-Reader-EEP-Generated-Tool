@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>749</width>
-    <height>664</height>
+    <height>720</height>
    </rect>
   </property>
   <property name="font">
@@ -676,7 +676,7 @@
      <rect>
       <x>40</x>
       <y>20</y>
-      <width>61</width>
+      <width>71</width>
       <height>31</height>
      </rect>
     </property>
@@ -1141,6 +1141,25 @@
      </property>
     </widget>
    </widget>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>660</y>
+     <width>381</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Powered by barryblueice, 2025. &lt;br/&gt;NOT Genesys Official.&lt;br/&gt;OpenSource-Link: &lt;a href=&quot;https://github.com/barryblueice/Genesys-Reader-EEP-Generated-Tool&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#003e92;&quot;&gt;GitHub-Genesys Reader EEP Generated Tool&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+   </property>
+   <property name="openExternalLinks">
+    <bool>true</bool>
+   </property>
   </widget>
  </widget>
  <resources/>
