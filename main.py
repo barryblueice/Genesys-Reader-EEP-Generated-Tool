@@ -13,10 +13,6 @@ class GenesysTool(QWidget):
         
         self.setFixedSize(self.width(), self.height())
         
-        icon_path = os.path.join(os.path.dirname(__file__), "icon.ico")
-        if os.path.exists(icon_path):
-            self.setWindowIcon(QIcon(icon_path))
-        
         self.toggle_string_group()
         
         self.ui.customized_string.stateChanged.connect(self.toggle_string_group)

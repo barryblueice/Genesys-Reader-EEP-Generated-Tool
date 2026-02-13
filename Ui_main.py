@@ -114,6 +114,7 @@ class Ui_Form(object):
         self.lun1_assignment.addItem("")
         self.lun1_assignment.setObjectName(u"lun1_assignment")
         self.lun1_assignment.setGeometry(QRect(130, 380, 201, 31))
+        self.lun1_assignment.setModelColumn(0)
         self.label_15 = QLabel(self.groupBox_2)
         self.label_15.setObjectName(u"label_15")
         self.label_15.setGeometry(QRect(20, 380, 101, 31))
@@ -214,6 +215,7 @@ class Ui_Form(object):
         self.usb_power_setting.setGeometry(QRect(180, 110, 71, 31))
         self.usb_power_setting.setMinimum(500)
         self.usb_power_setting.setMaximum(900)
+        self.usb_power_setting.setSingleStep(8)
         self.label_22 = QLabel(self.groupBox_3)
         self.label_22.setObjectName(u"label_22")
         self.label_22.setGeometry(QRect(260, 110, 31, 31))
@@ -306,6 +308,13 @@ class Ui_Form(object):
         self.label_23.setOpenExternalLinks(True)
 
         self.retranslateUi(Form)
+
+        self.lun1_assignment.setCurrentIndex(6)
+        self.lun2_assignment.setCurrentIndex(6)
+        self.lun3_assignment.setCurrentIndex(6)
+        self.lun4_assignment.setCurrentIndex(6)
+        self.lun5_assignment.setCurrentIndex(6)
+
 
         QMetaObject.connectSlotsByName(Form)
     # setupUi

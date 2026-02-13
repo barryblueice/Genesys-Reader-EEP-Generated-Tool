@@ -343,6 +343,12 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="currentIndex">
+     <number>6</number>
+    </property>
+    <property name="modelColumn">
+     <number>0</number>
+    </property>
     <item>
      <property name="text">
       <string>MS (Memory Stick)</string>
@@ -403,6 +409,9 @@
       <width>201</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="currentIndex">
+     <number>6</number>
     </property>
     <item>
      <property name="text">
@@ -465,6 +474,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="currentIndex">
+     <number>6</number>
+    </property>
     <item>
      <property name="text">
       <string>MS (Memory Stick)</string>
@@ -526,6 +538,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="currentIndex">
+     <number>6</number>
+    </property>
     <item>
      <property name="text">
       <string>MS (Memory Stick)</string>
@@ -586,6 +601,9 @@
       <width>201</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="currentIndex">
+     <number>6</number>
     </property>
     <item>
      <property name="text">
@@ -802,6 +820,9 @@
     </property>
     <property name="maximum">
      <number>900</number>
+    </property>
+    <property name="singleStep">
+     <number>8</number>
     </property>
    </widget>
    <widget class="QLabel" name="label_22">
