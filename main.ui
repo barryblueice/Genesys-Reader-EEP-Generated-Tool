@@ -145,7 +145,7 @@
      <rect>
       <x>130</x>
       <y>30</y>
-      <width>51</width>
+      <width>71</width>
       <height>31</height>
      </rect>
     </property>
@@ -279,7 +279,7 @@
    <widget class="QCheckBox" name="mmc_support">
     <property name="geometry">
      <rect>
-      <x>201</x>
+      <x>220</x>
       <y>30</y>
       <width>111</width>
       <height>31</height>
@@ -796,7 +796,7 @@
    <widget class="QLabel" name="label_21">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>50</x>
       <y>110</y>
       <width>121</width>
       <height>31</height>
@@ -809,9 +809,9 @@
    <widget class="QSpinBox" name="usb_power_setting">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>170</x>
       <y>110</y>
-      <width>71</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
@@ -828,7 +828,7 @@
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>270</x>
       <y>110</y>
       <width>31</width>
       <height>31</height>
@@ -979,7 +979,7 @@
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>SD</string>
     </property>
     <property name="maxLength">
      <number>4</number>
