@@ -85,6 +85,7 @@ class GenesysTool(QWidget):
                 card_s = ",".join([s for s in c_list if s])
 
             output = (
+                f"[CheckSumIndex]\n9\n"
                 f"[START]\n"
                 f"{vid}        #00h Vendor ID\n"
                 f"{pid}        #01h Product ID\n"
@@ -98,6 +99,7 @@ class GenesysTool(QWidget):
                 f"00{reg_c1}        #09h Checksum(00)/Configuration 1\n\n"
                 f"[V-STR]\n\"{v_s}\"\n\n[P-STR]\n\"{p_s}\"\n\n"
                 f"[S-STR]\n\"{s_s}\"\n\n[Card-STR]\n\"{card_s}\"\n"
+                f"[END]\n\n"
             )
 
             f_path, _ = QFileDialog.getSaveFileName(self, "Save EEP", "", "EEP Files (*.eep)")
