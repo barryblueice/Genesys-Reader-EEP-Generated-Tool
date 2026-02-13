@@ -84,23 +84,38 @@ class GenesysTool(QWidget):
                           self.ui.c_str_2.text().strip(), self.ui.c_str_3.text().strip()]
                 card_s = ",".join([s for s in c_list if s])
 
-            output = (
-                f"[CheckSumIndex]\n9\n"
-                f"[START]\n"
-                f"{vid}        #00h Vendor ID\n"
-                f"{pid}        #01h Product ID\n"
-                f"{reg_power}{reg_pcs}        #02h Power/CardType\n"
-                f"00{reg_lun}        #03h LUN Count\n"
-                f"0000        #04h String offsets\n"
-                f"0000        #05h Configuration 3\n"
-                f"{i1}{i0}        #06h ICON 1/0\n"
-                f"{i2}{i3}        #07h ICON 3/2\n"
-                f"{reg_c2}{i4}        #08h Configuration 2/ICON4\n"
-                f"00{reg_c1}        #09h Checksum(00)/Configuration 1\n\n"
-                f"[V-STR]\n\"{v_s}\"\n\n[P-STR]\n\"{p_s}\"\n\n"
-                f"[S-STR]\n\"{s_s}\"\n\n[Card-STR]\n\"{card_s}\"\n"
-                f"[END]\n\n"
-            )
+            output= [
+                "[CheckSumIndex]",
+                "9",
+                "[START]",
+                f"{vid}        #00h Vendor ID",
+                f"{pid}        #01h Product ID",
+                f"{reg_power}{reg_pcs}        #02h Power/CardType",
+                f"00{reg_lun}        #03h LUN Count",
+                "0000        #04h String offsets",
+                "0000        #05h Configuration 3",
+                f"{i1}{i0}        #06h ICON 1/0",
+                f"{i2}{i3}        #07h ICON 3/2",
+                f"{reg_c2}{i4}        #08h Configuration 2/ICON4",
+                f"00{reg_c1}        #09h Checksum(00)/Configuration 1",
+                "",
+                "[V-STR]",
+                f"\"{v_s}\"",
+                "",
+                "[P-STR]",
+                f"\"{p_s}\"",
+                "",
+                "[S-STR]",
+                f"\"{s_s}\"",
+                "",
+                "[Card-STR]"
+            ]
+
+            output.append(f"\"{card_s}\"")
+            output.append("[END]")
+            output.append("")
+
+            output = "\n".join(output)
 
             f_path, _ = QFileDialog.getSaveFileName(self, "Save EEP", "", "EEP Files (*.eep)")
             if f_path:
